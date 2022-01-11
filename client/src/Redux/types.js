@@ -1,0 +1,5 @@
+export const USERS = {
+    REQUEST: "GET_USER_REQUEST",
+    SUCCESS: "GET_USER_SUCCESS",
+    FAIL: "GET_USER_FAIL",
+}
