@@ -10,11 +10,12 @@ import './homepage.css'
 const Homepage=()=>{
     const  {users} = useSelector((state) => state.staff)
 
-
     const dispatch = useDispatch()
     useEffect(() => {
       dispatch(getStaffs())
     }, [])
+
+    console.log('users' ,users)
 
     return(
         <div>
@@ -32,6 +33,18 @@ const Homepage=()=>{
             </tr>
           </thead>
           <tbody>
+
+            {
+                users.map( user=>(
+                  <tr>
+                    <td>{user.staff_id}</td>
+                    <td>{user.first_name}</td>
+                    <td>{user.lastname_name}</td>
+                    <td>{user.email}</td>
+                    <td>{user.phone}</td>
+                  </tr>
+                ))
+            }
 
           </tbody>
             </table>

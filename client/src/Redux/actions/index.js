@@ -6,8 +6,7 @@ export const getStaffs = () => async dispatch => {
     })
 
     try {
-        const { data } = await axios.get("http://localhost:5000/staff")
-      
+        const { data } = await axios.get("http://localhost:5000/staff") 
         dispatch({
             type: USERS.SUCCESS,
             users: data,

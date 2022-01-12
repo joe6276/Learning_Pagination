@@ -6,6 +6,6 @@ module.exports={
           throw new HttpException(500, "Something went wrong");
         }
         res.status(201).send(results.recordsets[0]);
-        console.log(results.recordsets[0]);
+        console.log("Here are the results" ,results.recordsets[0]);
   }
 }
