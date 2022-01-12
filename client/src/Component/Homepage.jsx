@@ -1,13 +1,13 @@
 import React from 'react'
 //import { useState, useEffect } from 'react'
-
+import './homepage.css'
 export const Homepage = ({users}) => {
   return (
 
     <div>
       <h1 className='head1'> Learning  Pagination </h1>
 
-      <table>
+      <table  id="tbl" class="table">
         <thead>
           <tr>
             <th scope="col">#</th>
