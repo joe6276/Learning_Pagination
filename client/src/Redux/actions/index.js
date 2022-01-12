@@ -10,9 +10,10 @@ export const getStaffs = () => async dispatch => {
         dispatch({
             type: USERS.SUCCESS,
             users: data,
-            message:"sucessfully"
+            message:"sucessfully",
+            
         })
-
+        localStorage.setItem('mydata', JSON.stringify(data))
 
 
     }
