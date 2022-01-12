@@ -1,21 +1,7 @@
 import React from 'react'
 //import { useState, useEffect } from 'react'
 
-export const Homepage = () => {
-
-  let data = localStorage.getItem('mydata');
-  data= JSON.parse(data)
-  // const [userData, setUserData] = useState([])
-
-  // useEffect(() => {
-  //   setUserData(data)
-  // })
-
-  console.log("data", data)
-  console.log(typeof data);
-
- 
-
+export const Homepage = ({users}) => {
   return (
 
     <div>
@@ -32,7 +18,7 @@ export const Homepage = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((user) => (
+          {users.map((user) => (
 
             <tr>
               <td>{user.staff_id}</td>
