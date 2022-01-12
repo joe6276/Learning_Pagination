@@ -1,3 +1,26 @@
 .head1{
-    color:aqua;
+    color:black;
+    margin-left: 120px;
+}
+
+#tbl{
+    width: 1000px;
+    height: auto;
+    margin-left: 100px;
+}
+
+#uls{
+    margin-left: 120px;
+}
+.here{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
+
+.here1{
+    width: 40px;
+    height:30px;
 }
